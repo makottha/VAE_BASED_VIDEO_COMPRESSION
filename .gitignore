@@ -1,0 +1,49 @@
+# ── Large output / checkpoint directories ──────────────────────
+/Archive/paper_images/
+/best_pairs/
+/checkpoints/
+/MS_VQ_VAE_RD/outputs_msvqvae_rd/
+/MS_VQ_VAE_128/outputs_msvqvae_128/
+/MS_VQ_VAE_256/outputs_msvqvae_256/
+/MS_VQ_VAE_MOTION/outputs/
+/MS_VQ_VAE_MOTION/results/
+/MS_VQ_VAE_MOTION_PROBE/results/
+/logs/
+/plots_rd/
+
+# ── Datasets (large binary files) ──────────────────────────────
+/dataset_64/
+/dataset_128/
+/dataset_256/
+/dataset_human_readable_64/
+/UCF-101/
+*.rar
+
+# ── PyTorch checkpoints anywhere in the repo ───────────────────
+**/*.pt
+**/*.pth
+
+# ── Video files ─────────────────────────────────────────────────
+*.avi
+*.mp4
+*.mov
+
+# ── Python cache ────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── IDE / OS ────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ── Jupyter ─────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Claude Code internal settings ───────────────────────────────
+.claude/

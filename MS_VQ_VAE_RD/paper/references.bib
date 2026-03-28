@@ -1,0 +1,170 @@
+% references.bib — Bibliography for the MS-VQ-VAE RD extension paper
+
+% ── Our prior paper ───────────────────────────────────────────────────────────
+@inproceedings{kotthapalli2024msvqvae,
+  title     = {Hierarchical Vector-Quantized Latents for Perceptual
+               Low-Resolution Video Compression},
+  author    = {Kotthapalli, Manikanta and Rekabdar, Banafsheh},
+  booktitle = {Advances in Visual Computing. {ISVC} 2025},
+  editor    = {Bebis, George and others},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {16397},
+  publisher = {Springer, Cham},
+  year      = {2026},
+  isbn      = {978-3-032-14495-9},
+  doi       = {10.1007/978-3-032-14495-9\_25}
+}
+
+% ── VQ-VAE foundational work ─────────────────────────────────────────────────
+@inproceedings{vqvae,
+  title     = {Neural Discrete Representation Learning},
+  author    = {van den Oord, Aaron and Vinyals, Oriol and Kavukcuoglu, Koray},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {30},
+  year      = {2017}
+}
+
+@article{vqvae2,
+  title   = {Generating Diverse High-Fidelity Images with {VQ-VAE-2}},
+  author  = {Razavi, Ali and van den Oord, Aaron and Vinyals, Oriol},
+  journal = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume  = {32},
+  year    = {2019}
+}
+
+% ── Autoregressive priors ─────────────────────────────────────────────────────
+@article{pixelcnn,
+  title   = {Pixel Recurrent Neural Networks},
+  author  = {van den Oord, Aaron and Kalchbrenner, Nal and Kavukcuoglu, Koray},
+  journal = {arXiv preprint arXiv:1601.06759},
+  year    = {2016}
+}
+
+@inproceedings{pixelsnail,
+  title     = {{PixelSNAIL}: An Improved Autoregressive Generative Model},
+  author    = {Chen, Xi and Mishra, Nikhil and Rohaninejad, Mostafa and Abbeel, Pieter},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2018}
+}
+
+% ── Learned image / video compression ────────────────────────────────────────
+@inproceedings{balle2018variational,
+  title     = {Variational Image Compression with a Scale Hyperprior},
+  author    = {Ball\'e, Johannes and Minnen, David and Singh, Saurabh and Hwang, Sung Jin and Johnston, Nick},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2018}
+}
+
+@inproceedings{minnen2018joint,
+  title     = {Joint Autoregressive and Hierarchical Priors for Learned Image Compression},
+  author    = {Minnen, David and Ball\'e, Johannes and Toderici, George D},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {31},
+  year      = {2018}
+}
+
+@article{dvc,
+  title   = {{DVC}: An End-to-end Deep Video Compression Framework},
+  author  = {Lu, Guo and Zhang, Wanli and Ouyang, Wanli and Chen, Li and Gao, Zhiyong and Xu, Dong},
+  journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year    = {2019}
+}
+
+@article{scale_space_flow,
+  title   = {Scale-Space Flow for End-to-End Optimized Video Compression},
+  author  = {Agustsson, Eirikur and Minnen, David and Johnston, Nick and Ball\'e, Johannes and Hwang, Sung Jin and Toderici, George},
+  journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year    = {2020}
+}
+
+@article{dcvc,
+  title   = {Deep Contextual Video Compression},
+  author  = {Li, Jiahao and Li, Bin and Lu, Yan},
+  journal = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume  = {34},
+  year    = {2021}
+}
+
+@inproceedings{mentzer2022vqcompression,
+  title     = {Finite Scalar Quantization: {VQ-VAE} Made Simple},
+  author    = {Mentzer, Fabian and Minnen, David and Agustsson, Eirikur and Tschannen, Michael},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2024}
+}
+
+% ── Perceptual metrics / losses ──────────────────────────────────────────────
+@inproceedings{lpips,
+  title     = {The Unreasonable Effectiveness of Deep Features as a Perceptual Metric},
+  author    = {Zhang, Richard and Isola, Phillip and Efros, Alexei A and Shechtman, Eli and Wang, Oliver},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2018}
+}
+
+@article{ssim,
+  title   = {Image Quality Assessment: From Error Visibility to Structural Similarity},
+  author  = {Wang, Zhou and Bovik, Alan Conrad and Sheikh, Hamid Rahim and Simoncelli, Eero P},
+  journal = {IEEE Transactions on Image Processing},
+  volume  = {13},
+  number  = {4},
+  pages   = {600--612},
+  year    = {2004}
+}
+
+% ── Dataset ──────────────────────────────────────────────────────────────────
+@inproceedings{ucf101,
+  title     = {{UCF101}: A Dataset of 101 Human Actions Classes From Videos in The Wild},
+  author    = {Soomro, Khurram and Zamir, Amir Roshan and Shah, Mubarak},
+  booktitle = {arXiv preprint arXiv:1212.0402},
+  year      = {2012}
+}
+
+% ── Traditional codecs ────────────────────────────────────────────────────────
+@misc{h264,
+  title  = {{H.264/AVC} Video Coding Standard},
+  author = {{ITU-T}},
+  year   = {2003},
+  note   = {ITU-T Recommendation H.264}
+}
+
+@misc{hevc,
+  title  = {{H.265/HEVC} High Efficiency Video Coding},
+  author = {{ITU-T}},
+  year   = {2013},
+  note   = {ITU-T Recommendation H.265}
+}
+
+% ── EMA codebook / related VQ training tricks ────────────────────────────────
+@article{ema_vq,
+  title   = {Commitment Issues: Robust Training of Neural Discrete Representations},
+  author  = {Huh, Minyoung and Cheung, Brian and Agrawal, Pulkit and Isola, Phillip},
+  journal = {arXiv preprint arXiv:2308.04746},
+  year    = {2023}
+}
+
+% ── Rate-distortion theory ────────────────────────────────────────────────────
+@book{cover2006elements,
+  title     = {Elements of Information Theory},
+  author    = {Cover, Thomas M and Thomas, Joy A},
+  publisher = {Wiley},
+  edition   = {2nd},
+  year      = {2006}
+}
+
+% ── Generative video / ultra-low bitrate ─────────────────────────────────────
+@article{mentzer2020highfidelity,
+  title   = {High-Fidelity Generative Image Compression},
+  author  = {Mentzer, Fabian and Toderici, George D and Tschannen, Michael and Agustsson, Eirikur},
+  journal = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume  = {33},
+  year    = {2020}
+}
+
+@article{rdo,
+  title   = {Rate-Distortion Optimization},
+  author  = {Sullivan, Gary J and Wiegand, Thomas},
+  journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+  volume  = {8},
+  number  = {6},
+  pages   = {703--703},
+  year    = {1998}
+}

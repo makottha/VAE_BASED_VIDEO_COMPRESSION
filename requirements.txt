@@ -1,0 +1,12 @@
+torch>=2.0.0
+torchvision>=0.15.0
+numpy
+opencv-python
+imageio[ffmpeg]
+Pillow
+scikit-image
+lpips
+pandas
+matplotlib
+scikit-learn
+tqdm

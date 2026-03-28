@@ -1,0 +1,17 @@
+{
+  "n_clips": 100,
+  "mean_bpp_raw": 0.126,
+  "mean_bpp_diff": 0.06691,
+  "mean_bpp_reduction": 46.79,
+  "mean_magnitude_ratio": 0.0193,
+  "mean_psnr_raw": 28.603,
+  "mean_psnr_diff_recon": 26.12,
+  "mean_entropy_top_raw": 6.5192,
+  "mean_entropy_top_diff": 5.0198,
+  "mean_entropy_bot_raw": 7.2494,
+  "mean_entropy_bot_diff": 3.6548,
+  "mean_used_top_raw": 119.6,
+  "mean_used_top_diff": 76.8,
+  "mean_used_bot_raw": 379.6,
+  "mean_used_bot_diff": 237.9
+}
