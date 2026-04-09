@@ -7,7 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\graphicspath{{figures/}}
+\graphicspath{{./}}
 \usepackage{microtype}
 \usepackage{xcolor}
 \usepackage{multirow}
@@ -49,7 +49,7 @@ Learned video codecs based on continuous latent representations struggle
 to operate reliably below 0.1 bits per pixel~(bpp): without a
 differentiable rate signal, Lagrangian optimisation cannot effectively
 trade reconstruction quality for bitrate at extreme compression ratios.
-We demonstrate that \emph{discrete} latent representations sidestep
+We demonstrate that discrete latent representations sidestep
 this limitation entirely. In a vector-quantized~(VQ) codec, the
 codebook size~$K$ imposes a hard information ceiling of $\log_2 K$ bits
 per symbol; a learned autoregressive prior then exploits the
@@ -565,11 +565,11 @@ as fine-texture variation rather than blur.
   \setlength{\tabcolsep}{2pt}
   \renewcommand{\arraystretch}{0.8}
   \begin{tabular}{ccccc}
-    \includegraphics[width=0.188\linewidth]{qual_frames/v_ApplyEyeMakeup_g01_c01_clip_0004__original.png} &
-    \includegraphics[width=0.188\linewidth]{qual_frames/v_ApplyEyeMakeup_g01_c01_clip_0004__K128.png}     &
-    \includegraphics[width=0.188\linewidth]{qual_frames/v_ApplyEyeMakeup_g01_c01_clip_0004__K256.png}     &
-    \includegraphics[width=0.188\linewidth]{qual_frames/v_ApplyEyeMakeup_g01_c01_clip_0004__K512.png}     &
-    \includegraphics[width=0.188\linewidth]{qual_frames/v_ApplyEyeMakeup_g01_c01_clip_0004__K1024.png}    \\[2pt]
+    \includegraphics[width=0.188\linewidth]{v_ApplyEyeMakeup_g01_c01_clip_0004__original.png} &
+    \includegraphics[width=0.188\linewidth]{v_ApplyEyeMakeup_g01_c01_clip_0004__K128.png}     &
+    \includegraphics[width=0.188\linewidth]{v_ApplyEyeMakeup_g01_c01_clip_0004__K256.png}     &
+    \includegraphics[width=0.188\linewidth]{v_ApplyEyeMakeup_g01_c01_clip_0004__K512.png}     &
+    \includegraphics[width=0.188\linewidth]{v_ApplyEyeMakeup_g01_c01_clip_0004__K1024.png}    \\[2pt]
     \small Original &
     \small $K{=}128$ \scriptsize(0.043\,bpp) &
     \small $K{=}256$ \scriptsize(0.049\,bpp) &
@@ -634,8 +634,8 @@ semantically coherent regions.
   \setlength{\tabcolsep}{3pt}
   \begin{tabular}{cc}
     \includegraphics[width=0.48\linewidth]{fig1_utilization.png} &
-    \includegraphics[width=0.48\linewidth]{fig2_entropy_efficiency.png} \\
-    \includegraphics[width=0.48\linewidth]{fig3_rate_breakdown.png} &
+        \includegraphics[width=0.48\linewidth]{fig3_rate_breakdown.png} \\
+    \includegraphics[width=0.48\linewidth]{fig2_entropy_efficiency.png} &
     \includegraphics[width=0.48\linewidth]{fig4_index_histogram.png} \\
   \end{tabular}
   \caption{Codebook analysis across $K \in \{128, 256, 512, 1024\}$.

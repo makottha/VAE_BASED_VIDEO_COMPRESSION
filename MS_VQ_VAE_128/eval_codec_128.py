@@ -91,7 +91,7 @@ def evaluate_k(K: int, device: torch.device, ssim_fn, lpips_fn):
         use_ema=True, use_vgg=False,
     ).to(device).eval()
     ae_state = torch.load(ae_ckpt, map_location=device, weights_only=False)
-    ae.load_state_dict(ae_state["model"])
+    ae.load_state_dict(ae_state["model"], strict=False)  # strict=False ignores frozen VGG keys saved during training
 
     # Load priors
     prior_state = torch.load(prior_ckpt, map_location=device, weights_only=True)
@@ -184,9 +184,9 @@ def main():
     all_results = []
 
     for K in K_VALUES:
-        print(f"\n{'─'*50}")
+        print(f"\n{'-'*50}")
         print(f"  Evaluating K={K}")
-        print(f"{'─'*50}")
+        print(f"{'-'*50}")
         result = evaluate_k(K, device, ssim_fn, lpips_fn)
         if result:
             all_results.append(result)
@@ -200,7 +200,7 @@ def main():
             writer.writerows(all_results)
         print(f"\n[SAVED] {RESULTS_CSV}")
 
-        print("\n── Summary ──────────────────────────────────────")
+        print("\n-- Summary --")
         print(f"{'K':>6}  {'BPP':>7}  {'PSNR':>8}  {'SSIM':>7}  {'LPIPS':>7}")
         for r in all_results:
             print(f"{r['K']:>6}  {r['BPP']:>7.4f}  {r['PSNR']:>7.2f}dB  {r['SSIM']:>7.4f}  {r['LPIPS']:>7.4f}")
