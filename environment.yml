@@ -1,0 +1,24 @@
+name: vae_env
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    # PyTorch with CUDA 12.8 — required for RTX 5080 (Blackwell sm_120)
+    - torch --index-url https://download.pytorch.org/whl/cu128
+    - torchvision --index-url https://download.pytorch.org/whl/cu128
+    # Core scientific stack
+    - numpy
+    - pandas
+    - matplotlib
+    - scikit-learn
+    - scikit-image
+    - Pillow
+    - tqdm
+    # Project dependencies
+    - opencv-python
+    - lpips
+    - torchmetrics
+    - imageio[ffmpeg]
+    - rarfile
